@@ -1,7 +1,8 @@
 <template>
   <div>
     {{ computedMessage }}
-    {{ messageMethod }}
+    <br />
+    {{ messageMethod() }}
   </div>
 </template>
 
@@ -13,11 +14,13 @@
         message: 'hello'
       }
     },
+    // computed侧重计算返回的值
     computed: {
       computedMessage: function () {
         return this.message + ' world'
       }
     },
+    // methods是真正的方法，调用方式不同
     methods: {
       messageMethod: function () {
         return this.message + ' world'
