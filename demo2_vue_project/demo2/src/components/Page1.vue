@@ -1,17 +1,20 @@
 <template>
   <div>
     <div v-if = "see">
-      哈哈哈
+      Item1
+    </div>
+    <div v-else>
+      Item2
     </div>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'item',
+    name: 'page1',
     data: function () {
       return {
-        see: true
+        see: false
       }
     }
   }
