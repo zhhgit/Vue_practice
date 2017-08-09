@@ -6,7 +6,6 @@
       <br />
       输入的手机号为：
       {{ mobile }}
-
     </div>
   </div>
 </template>
