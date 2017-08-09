@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-        <div>
+        <div v-on:click="clickTriggered">
           {{ person.name }}
         </div>
     </div>
@@ -18,6 +18,12 @@
     props: {
       person: {
         type: Object
+      }
+    },
+    methods: {
+      clickTriggered: function (event) {
+        this.$emit('say')
+        alert(event.target.innerHTML)
       }
     }
   }

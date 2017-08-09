@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <todo v-for="item in list" v-bind:person="item" :key="item.id"></todo>
+      <todo v-for="item in list" v-bind:person="item" :key="item.id" v-on:say="sayName"></todo>
     </div>
   </div>
 </template>
@@ -21,6 +21,11 @@
     },
     components: {
       Todo
+    },
+    methods: {
+      sayName: function () {
+        alert('hello')
+      }
     }
   }
 </script>

@@ -55,7 +55,7 @@ export default new Router({
       name: 'Page7',
       component: Page7
     },
-    // vue组件,动态props
+    // vue组件,动态props,自定义事件
     {
       path: '/page8',
       name: 'Page8',
