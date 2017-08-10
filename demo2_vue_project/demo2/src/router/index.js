@@ -8,6 +8,7 @@ import Page5 from '@/components/Page5'
 import Page6 from '@/components/Page6'
 import Page7 from '@/components/Page7'
 import Page8 from '@/components/Page8'
+import Page9 from '@/components/Page9'
 
 Vue.use(Router)
 
@@ -60,6 +61,12 @@ export default new Router({
       path: '/page8',
       name: 'Page8',
       component: Page8
+    },
+    // filters
+    {
+      path: '/page9',
+      name: 'Page9',
+      component: Page9
     }
   ]
 })
